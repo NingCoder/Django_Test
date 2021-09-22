@@ -1,0 +1,16 @@
+
+{% extends 'admin/base.html' %}
+
+{% block extrahead %}{{ block.super }}
+<style>
+:root {
+  --primary: #9774d5;
+  --secondary: #785cab;
+  --link-fg: #7c449b;
+  --link-selected-fg: #8f5bb2;
+}
+</style>
+{% endblock %}
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">遗憾管理中心</a></h1>
+{% endblock %}
